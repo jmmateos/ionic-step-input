@@ -5,10 +5,13 @@
   "author": "jmmateos",
   "main": "./ionic-step-input.js",
   "ignore": [
+    "package.json",
+    "bower_components"
   ],
   "dependencies": {
-    "angular": ">=1"
+    "angular": "=1.5.3"
   },
   "devDependencies": {
+    "ionic": "1.3.2"
   }
 }

@@ -42,9 +42,9 @@
             },
             template: 
                 "<div class=\"button-bar\">" +
-                "<button type=\"button\" class=\"button icon\" ng-click=\"decrease()\" ng-class=\"property.decrease\" ng-class=\"{disabled: value == property.min_value}\"></button>" +
+                "<button type=\"button\" class=\"button icon\" ng-click=\"decrease()\" ng-class=\"[property.decrease,{disabled: value == property.minValue}]\"></button>" +
                 "<input class=\"button\" ng-model=\"value\" type=\"text\" ng-required=\"required\">" +
-                "<button type=\"button\" class=\"button icon\" ng-click=\"increase()\" ng-class=\"property.increase\" ng-class=\"{disabled: value == property.max_value}\"></button>" +
+                "<button type=\"button\" class=\"button icon\" ng-click=\"increase()\" ng-class=\"[property.increase,{disabled: value == property.maxValue}]\"></button>" +
                 "</div>"
         };
     });

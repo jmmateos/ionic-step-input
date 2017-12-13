@@ -1,0 +1,14 @@
+{
+    "name": "ionic-step-input",
+    "version": "0.1.0",
+    "author": "jmmateos",
+    "repository": "https://github.com/jmmateos/ionic-step-input.git",
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ],
+    "dependencies": {},
+    "devDependencies": { },
+    "scripts": { }
+}
