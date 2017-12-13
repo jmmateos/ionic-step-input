@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; img-src 'self' data: ; style-src  'self' 'unsafe-inline' *">
+    <title></title>
+
+    <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="./ionic-step-input.js"></script>
+
+
+<script src="scripts/app.js"></script>
+
+
+</head>
+
+<body ng-app="IonicApp">
+    <ion-pane ng-controller="IonicAppCtrl">
+        <ion-header-bar class="bar-positive" >
+            <h1 class="title">Test</h1>
+        </ion-header-bar>
+        <ion-content>
+    <div class="bar bar-header item-input-inset">
+            <i class="icon ion-qr-scanner placeholder-icon"></i>
+            <ionic-step-input ng-model="unidades" step-input-option="{minValue:1,maxValue:999}"></ionic-step-input>
+        
+        <button class="button button-assertive">
+            Insertar
+        </button>
+       
+    </div>
+            <h1>Hello world!</h1>
+            <div clas="row">
+                <div class="col col-50">
+                    <ionic-step-input ng-model="unidades"></ionic-step-input>
+                </div>
+                <div class="col col-50">
+                    <ionic-step-input ng-model="unidades" step-input-options="{decrease:'ion-minus-round', increase:'ion-plus-round'}"></ionic-step-input>
+                </div>
+                
+            </div>
+            
+        </ion-content>
+    </ion-pane>
+</body>
+
+</html>
