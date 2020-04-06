@@ -25,17 +25,16 @@
                 }, true);
                 scope.value = !isNaN(parseInt(scope.value)) ? scope.value : 0;
                 scope.decrease = function () {
-                    return scope.value = scope.value - 1;
+                  scope.value = !isNaN(parseInt(scope.value)) ? scope.value : 0;
+                  return scope.value--;
                 };
                 scope.increase = function () {
-                    return scope.value = scope.value + 1;
+                  scope.value = !isNaN(parseInt(scope.value)) ? scope.value : 0;
+                  return scope.value++;
                 };
-                return scope.$watch('value', function (val, oldval) {
-                    var overrides;
+                return scope.$watch('value', function (val) {
                     if (!isNaN(parseInt(scope.value))) {
                         scope.value = Math.min(Math.max(parseInt(val), options.minValue), options.maxValue);
-                    } else {
-                        scope.value = oldval;
                     }
                     scope.property = angular.copy(options);
                 });
