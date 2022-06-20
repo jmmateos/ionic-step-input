@@ -1,7 +1,7 @@
 {
   "name": "ionic-step-input",
   "description": "Angular directive for a customized ionic numeric user inputs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "jmmateos",
   "main": "./ionic-step-input.js",
   "ignore": [
